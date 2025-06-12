@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bcground_Fundo"
+    android:layout_height="match_parent"
+    tools:context=".presenter.ui.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/edt_borda_verd_fundo_transparente"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/img_backHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:background="@drawable/edt_borda_verd_fundo_transparente"
+                android:paddingStart="10dp"
+                android:src="@drawable/ic_arrow_back_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bem-Vindo, Douglas"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_marginStart="50dp"/>
+
+        </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_list"
+            android:background="@drawable/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_list_150"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="16dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lista Alunos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/btn_list"
+            app:layout_constraintTop_toBottomOf="@id/btn_list"
+            app:layout_constraintEnd_toEndOf="@id/btn_list"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_result_150"
+            android:background="@drawable/btn_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="16dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultados"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/btn_result"
+            app:layout_constraintTop_toBottomOf="@id/btn_result"
+            app:layout_constraintEnd_toEndOf="@id/btn_result"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_group_150"
+            android:background="@drawable/btn_home"
+            app:layout_constraintStart_toStartOf="@id/btn_list"
+            app:layout_constraintEnd_toEndOf="@id/btn_list"
+            app:layout_constraintTop_toBottomOf="@id/txt_list"
+            android:layout_margin="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar alunos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/btn_register"
+            app:layout_constraintTop_toBottomOf="@id/btn_register"
+            app:layout_constraintEnd_toEndOf="@id/btn_register"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_instrutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_acont_24"
+            android:background="@drawable/btn_home"
+            app:layout_constraintStart_toStartOf="@id/btn_result"
+            app:layout_constraintEnd_toEndOf="@id/btn_result"
+            app:layout_constraintTop_toBottomOf="@id/txt_result"
+            android:layout_margin="16dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_instrutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instrutor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/btn_instrutor"
+            app:layout_constraintTop_toBottomOf="@id/btn_instrutor"
+            app:layout_constraintEnd_toEndOf="@id/btn_instrutor"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</LinearLayout>

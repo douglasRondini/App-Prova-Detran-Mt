@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "331341609811",
+    "project_id": "prova-detran-mendes",
+    "storage_bucket": "prova-detran-mendes.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331341609811:android:b14036501f3835a6233fa6",
+        "android_client_info": {
+          "package_name": "com.example.provamendes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClo0pIWSqjzP8ApLd2zuSpf1EXYoPIfA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
