@@ -40,7 +40,13 @@ class ListAlunosFragment : Fragment() {
     private fun listAlunos() {
         viewModel.itemList.observe(viewLifecycleOwner) { listaAlunos ->
             val listView = binding.listVListAlunos
-            val adapter = AlunoAdapter(requireContext(), listaAlunos)
+            val adapter = AlunoAdapter(
+                requireContext(), listaAlunos,
+                onResultUpdate = {
+                viewModel.updateList(listaAlunos)
+                },
+                showOnlyPending = true
+            )
             listView.adapter = adapter
         }
     }

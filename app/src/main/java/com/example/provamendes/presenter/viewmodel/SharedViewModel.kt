@@ -14,4 +14,7 @@ class SharedViewModel : ViewModel() {
         listaAtualizada.add(aluno)
         _itemList.value = listaAtualizada
     }
+    fun updateList(listaAtualizada: List<Aluno>) {
+        _itemList.value = listaAtualizada
+    }
 }
