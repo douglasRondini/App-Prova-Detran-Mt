@@ -7,38 +7,57 @@
     android:background="@color/bcground_Fundo"
     tools:context=".presenter.ui.ResultFragment">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/edt_borda_verd_fundo_transparente"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@drawable/edt_borda_verd_fundo_transparente"
-            android:orientation="horizontal">
+            android:paddingTop="5dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/ic_arrow_back_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultados das Provas"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginStart="50dp"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="5dp"
-                android:paddingStart="10dp"
-                android:src="@drawable/ic_arrow_back_24"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reaultados das Provas"
-                android:textSize="20sp"
-                android:gravity="center"
-                android:layout_marginStart="50dp"/>
+    </LinearLayout>
 
-        </LinearLayout>
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/edt_search_result"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableEnd="@drawable/ic_search_list_24"
-        android:layout_margin="16dp"
-        android:hint="Digite uma Data de Prova"/>
+        android:text="Alunos Aprovados"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_margin="16dp"/>
+
     <ListView
-        android:id="@+id/listV_Result"
+        android:id="@+id/listV_aprovados"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alunos Reprovados"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_margin="16dp"/>
+
+    <ListView
+        android:id="@+id/listV_reprovados"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 </LinearLayout>
