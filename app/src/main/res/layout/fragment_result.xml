@@ -30,6 +30,15 @@
 
     </LinearLayout>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_generate_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Gerar Relatório PDF"
+        android:textSize="16sp"
+        android:background="@drawable/edt_borda_verd_fundo_transparente"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
